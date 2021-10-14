@@ -111,6 +111,10 @@ namespace GC_PasswordRegistration
             {
                 rule.Add("Rule Broken: Did not include letters");
             }
+            if (upperCount + lowerCount < 5)
+            {
+                rule.Add("Rule Broken: Must have at least 5 letters");
+            }
             if (numCount <= 0)
             {
                 rule.Add("Rule Broken: Did not include numbers");
